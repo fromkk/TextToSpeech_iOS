@@ -33,10 +33,15 @@ git clone https://github.com/fromkk/TextToSpeech.git
 cd TextToSpeech
 ```
 
-2. Open `TextToSpeech/Constants.swift` and add your OpenAI API key
+2. Add your OpenAI API key to `TextToSpeech/Constants.swift`
 ```swift
-static let OpenAIApiKey = "YOUR_OPENAI_API_KEY"
+static let OpenAIApiKey = "sk-proj-..."  // Replace with your actual API key
 ```
+
+**Security Note:** The API key is currently hardcoded in the source file. For production use, consider:
+- Adding `Constants.swift` to `.gitignore` to prevent committing your API key
+- Using environment variables or a secure configuration file
+- Using Xcode configuration files (`.xcconfig`) that are excluded from version control
 
 3. Open the project in Xcode and build
 ```bash
