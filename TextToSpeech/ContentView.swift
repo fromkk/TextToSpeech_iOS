@@ -106,6 +106,7 @@ final class ContentStore: Sendable {
     guard let url = generatedURL else { return }
 
     do {
+      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .mixWithOthers)
       audioPlayer = try AVAudioPlayer(contentsOf: url)
       audioPlayer?.prepareToPlay()
       audioPlayer?.play()
