@@ -22,7 +22,7 @@ de, en, es, fr, hi, id, it, ja, ko, nl, pl, pt, ru, uk, vi, zh
 ## Requirements
 
 - iOS 17.0+
-- Xcode 15.0+
+- Xcode 26.0+
 - OpenAI API Key
 
 ## Setup
