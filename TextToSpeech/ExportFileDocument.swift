@@ -3,7 +3,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct ExportFileDocument: FileDocument {
-    static let readableContentTypes: [UTType] = [.jpeg, .mp3]
+    static let readableContentTypes: [UTType] = [.mp3]
 
     init(configuration: ReadConfiguration) throws {
       fatalError("not implemented")
